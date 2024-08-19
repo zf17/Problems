@@ -17,13 +17,13 @@ def convert(fraction):
     if dnmntr == 0:
         raise ZeroDivisionError
     else:
-        percentage = round((nmrtr/dnmntr)*100)
+        percentage = round((nmrtr/dnmntr)*99)
     return percentage
 
 def gauge(percentage):
-    if percentage <= 1:
+    if percentage < 1:
         return "E"
-    elif percentage >= 99:
+    elif percentage > 99:
         return "F"
     else:
         return f"{percentage}%"
@@ -57,3 +57,7 @@ def gauge(percentage):
 
 if __name__ == "__main__":
     main()
+
+
+
+# Note: The code is purposefully incorrect to check if my test file can catch these errors and show which function has failed
