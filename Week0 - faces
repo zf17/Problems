@@ -5,7 +5,9 @@ def convert(emoji):
 def main():
     inp = input()
     print(convert(inp))
-main()
+
+if __name__ == "__main__":
+    main()
 
 # In a file called faces.py, implement a function called convert that accepts a str as input and 
 # returns that same input with any :) converted to 🙂 (otherwise known as a slightly smiling face)
