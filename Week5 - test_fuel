@@ -1,0 +1,10 @@
+from fuel import convert
+from fuel import gauge
+
+def test_convert(fraction):
+    fraction.assertRaises(ZeroDivisionError, convert, "2/0")
+
+def test_gauge():
+    assert gauge(50) == "50%"
+    assert gauge(0) == "E"
+    assert gauge(100) == "F"
