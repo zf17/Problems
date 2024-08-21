@@ -1,9 +1,17 @@
-def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
+# In a file called plates.py, reimplement Vanity Plates from Problem Set 2, restructuring your code per the below, 
+# wherein is_valid still expects a str as input and returns True if that str meets all requirements and False if it
+# does not, but main is only called if the value of __name__ is "__main__":
+
+# def main():
+#     ...
+
+
+# def is_valid(s):
+#     ...
+
+
+# if __name__ == "__main__":
+#     main()
 
 
 def is_valid(s):
@@ -20,21 +28,13 @@ def is_valid(s):
             return False
     return True
 
-
-if __name__ == "__main__":
-    main()
-
-# In a file called plates.py, reimplement Vanity Plates from Problem Set 2, restructuring your code per the below, 
-# wherein is_valid still expects a str as input and returns True if that str meets all requirements and False if it
-# does not, but main is only called if the value of __name__ is "__main__":
-
 def main():
-    ...
-
-
-def is_valid(s):
-    ...
-
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
 if __name__ == "__main__":
     main()
+
